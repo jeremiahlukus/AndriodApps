@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jparrack.searchbar.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:id="@+id/sb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/tvCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="counter=1"
+            android:textSize="42sp" />
+
+        <Button
+            android:id="@+id/buStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="buStart"
+            android:text="Start Counter" />
+
+        <Button
+            android:id="@+id/buStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="buStop"
+            android:text="Stop Counter " />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

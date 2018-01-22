@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    tools:context="com.jparrack.notes.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvstatus"
+                android:layout_width="190dp"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:text="Status: " />
+
+            <CheckBox
+                android:id="@+id/checkBoxStatus"
+                android:layout_width="354dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:text="Yes / No" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="269dp"
+            android:layout_height="89dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="141dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="30dp"
+                android:text="Gender: " />
+
+            <RadioGroup
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="141dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="147dp"
+                    android:layout_height="89dp"
+                    android:layout_weight="1"
+                    android:text="Female" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvGraduated"
+                android:layout_width="142dp"
+                android:layout_height="79dp"
+                android:layout_weight="1"
+                android:text="Is Graduated? " />
+
+            <Switch
+                android:id="@+id/switchGraduated"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="40dp"
+                android:textOff="No"
+                android:textOn="Yes" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="386dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="buCheck"
+                android:text="Submit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="377dp"
+                android:layout_height="82dp"
+                android:layout_weight="1"
+                android:text="TextView" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
